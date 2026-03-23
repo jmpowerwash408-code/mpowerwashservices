@@ -4,11 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JM Power Wash Services</title>
-
+  <meta
+    name="description"
+    content="Professional power washing and exterior cleaning services in San Jose, California and surrounding areas."
+  />
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
@@ -79,9 +86,19 @@
       box-shadow: 0 8px 30px rgba(0,0,0,0.25);
     }
 
-    h1 { font-size: 48px; margin: 0 0 10px; }
+    h1 {
+      font-size: 48px;
+      margin: 0 0 10px;
+    }
 
-    h2 { font-size: 32px; margin-top: 0; }
+    h2 {
+      font-size: 32px;
+      margin-top: 0;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
 
     .hero-subtitle {
       font-size: 20px;
@@ -123,17 +140,31 @@
       color: white;
     }
 
-    section { padding: 60px 20px; }
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.95;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
 
     .container {
       max-width: 1200px;
       margin: 0 auto;
     }
 
-    .light { background: white; }
-    .gray { background: #eef2f7; }
+    .light {
+      background: white;
+    }
 
-    .services, .gallery, .highlights {
+    .gray {
+      background: #eef2f7;
+    }
+
+    .services,
+    .gallery,
+    .highlights {
       display: grid;
       gap: 20px;
     }
@@ -177,6 +208,36 @@
       width: 100%;
       height: 280px;
       object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery-item span {
+      position: absolute;
+      bottom: 14px;
+      left: 14px;
+      background: rgba(15, 23, 42, 0.82);
+      color: white;
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .contact-box {
+      background: #0f172a;
+      color: white;
+      padding: 35px;
+      border-radius: 18px;
+      text-align: center;
+    }
+
+    .contact-box a {
+      color: white;
     }
 
     footer {
@@ -185,63 +246,219 @@
       text-align: center;
       padding: 35px 20px;
     }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 34px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      .hero-subtitle {
+        font-size: 18px;
+      }
+
+      .nav-container {
+        justify-content: center;
+      }
+
+      .gallery-item img {
+        height: 240px;
+      }
+    }
   </style>
 </head>
-
 <body>
 
-<nav>
-  <div class="nav-container">
-    <a href="#home" class="brand">JM Power Wash Services</a>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#work">Our Work</a>
-      <a href="#area">Service Area</a>
-      <a href="#contact">Contact</a>
+  <nav>
+    <div class="nav-container">
+      <a href="#home" class="brand">JM Power Wash Services</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Our Work</a>
+        <a href="#area">Service Area</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<header id="home">
-  <div class="hero-inner">
-    <img src="logo.jpg" class="hero-logo" />
+  <header id="home">
+    <div class="hero-inner">
+      <img src="logo.jpg" alt="JM Power Wash Services Logo" class="hero-logo" />
+      <h1>JM Power Wash Services</h1>
+      <p class="hero-subtitle">Professional Exterior Cleaning for Homes and Businesses</p>
 
-    <h1>JM Power Wash Services</h1>
-    <p class="hero-subtitle">Professional Exterior Cleaning for Homes and Businesses</p>
+      <p class="hero-contact">📍 San Jose, California</p>
+      <p class="hero-contact">📞 (408) 677-9655</p>
+      <p class="hero-contact">✉️ jmpowerwash408@gmail.com</p>
+      <p class="hero-contact">📘 Facebook: jmpowerwashservices</p>
+      <p class="hero-contact">📷 Instagram: jmpowerwashservices</p>
+      <p class="hero-contact">✅ Licensed &amp; Insured</p>
+      <p class="hero-contact"><strong>Premium Services</strong></p>
 
-    <p class="hero-contact">📍 San Jose, California</p>
-    <p class="hero-contact">📞 408-667-9655</p>
-    <p class="hero-contact">✉️ jmpowerwash408@gmail.com</p>
-    <p class="hero-contact">📘 Facebook: jmpowerwashservices</p>
-    <p class="hero-contact">📷 Instagram: jmpowerwashservices</p>
-    <p class="hero-contact">✅ Licensed & Insured</p>
-    <p class="hero-contact"><strong>Premium Services</strong></p>
-
-    <div class="hero-buttons">
-      <a class="btn btn-primary" href="tel:4086679655">Call Now</a>
-      <a class="btn btn-secondary" href="mailto:jmpowerwash408@gmail.com">Free Estimate</a>
+      <div class="hero-buttons">
+        <a class="btn btn-primary" href="tel:4086779655">Call Now</a>
+        <a class="btn btn-secondary" href="mailto:jmpowerwash408@gmail.com">Free Estimate</a>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<section id="services" class="gray">
-  <div class="container">
-    <h2>Our Services</h2>
-    <div class="services">
-      <div class="card">House Washing</div>
-      <div class="card">Roof Cleaning</div>
-      <div class="card">Driveway Cleaning</div>
-      <div class="card">Sidewalk Cleaning</div>
-      <div class="card">Fence Cleaning</div>
-      <div class="card">Gutter Cleaning</div>
+  <section id="about" class="light">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        What makes our company different is that we offer a high-level exterior cleaning service focused on quality,
+        safety, and visible results. We use professional equipment, specialized techniques, and proper protection
+        to work on roofs and delicate surfaces.
+      </p>
+      <p>
+        Our goal is not only to clean, but to restore and maintain the appearance of every property as if it were new.
+        We focus on clients who value detail, responsibility, and reliable service that truly protects their investment.
+      </p>
+
+      <div class="highlights">
+        <div class="highlight-card">
+          <h3>Professional Equipment</h3>
+          <p>We use quality tools and proven techniques for strong, safe results.</p>
+        </div>
+        <div class="highlight-card">
+          <h3>Visible Results</h3>
+          <p>Our work is focused on restoring the clean look of your property.</p>
+        </div>
+        <div class="highlight-card">
+          <h3>Reliable Service</h3>
+          <p>We care about detail, responsibility, and protecting your investment.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer>
-  JM Power Wash Services © 2026
-</footer>
+  <section id="services" class="gray">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="card">House Washing</div>
+        <div class="card">Soft Wash Cleaning</div>
+        <div class="card">Roof Cleaning</div>
+        <div class="card">Concrete &amp; Surface Cleaning</div>
+        <div class="card">Gutter Cleaning</div>
+        <div class="card">Solar Panel Cleaning</div>
+        <div class="card">Trash Bin Cleaning</div>
+        <div class="card">Wood Fence Cleaning</div>
+        <div class="card">Patio Cleaning</div>
+        <div class="card">Driveway Cleaning</div>
+        <div class="card">Sidewalk Cleaning</div>
+        <div class="card">Exterior Wall Cleaning</div>
+        <div class="card">Deck Cleaning</div>
+        <div class="card">Parking Lot Cleaning</div>
+        <div class="card">Mold &amp; Algae Removal</div>
+        <div class="card">Commercial Pressure Washing</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="light">
+    <div class="container">
+      <h2>Our Work</h2>
+      <div class="gallery">
+
+        <div class="gallery-item">
+          <img src="gutter-cleaning.jpg" alt="Gutter cleaning service" />
+          <span>Gutter Cleaning</span>
+        </div>
+
+        <div class="gallery-item">
+          <img src="deck-cleaning.jpg" alt="Deck cleaning service" />
+          <span>Deck Cleaning</span>
+        </div>
+
+        <div class="gallery-item">
+          <img src="mold-removal.jpg" alt="Mold and algae removal service" />
+          <span>Mold &amp; Algae Removal</span>
+        </div>
+
+        <div class="gallery-item">
+          <img src="house-washing.jpg" alt="House washing service" />
+          <span>House Washing</span>
+        </div>
+
+        <div class="gallery-item">
+          <img src="soft-house-wash.jpg" alt="Soft wash cleaning service" />
+          <span>Soft Wash</span>
+        </div>
+
+        <div class="gallery-item">
+          <img src="roof-cleaning.jpg" alt="Roof cleaning service" />
+          <span>Roof Cleaning</span>
+        </div>
+
+        <div class="gallery-item">
+          <img src="sidewalk-cleaning.jpg" alt="Sidewalk cleaning service" />
+          <span>Sidewalk Cleaning</span>
+        </div>
+
+        <div class="gallery-item">
+          <img src="fence-cleaning.jpg" alt="Wood fence cleaning service" />
+          <span>Fence Cleaning</span>
+        </div>
+
+        <div class="gallery-item">
+          <img src="trash-bin-cleaning.jpg" alt="Trash bin cleaning service" />
+          <span>Trash Bin Cleaning</span>
+        </div>
+
+        <div class="gallery-item">
+          <img src="solar-cleaning.jpg" alt="Solar panel cleaning service" />
+          <span>Solar Panel Cleaning</span>
+        </div>
+
+        <div class="gallery-item">
+          <img src="before-after-driveway.png" alt="Driveway cleaning before and after" />
+          <span>Driveway Cleaning</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="area" class="gray">
+    <div class="container">
+      <h2>Service Area</h2>
+      <p>Based in San Jose, California. We operate up to approximately 120 miles around the area.</p>
+      <p>
+        San Jose, Milpitas, Alum Rock, Campbell, Saratoga, Los Gatos, Mountain View, Fremont, Palo Alto,
+        Union City, Redwood City, Hayward, San Mateo, San Leandro, South San Francisco, Oakland, Daly City,
+        San Francisco, Berkeley, San Pablo, Sausalito, Mill Valley, San Rafael, Walnut Creek, San Ramon,
+        Livermore, Santa Cruz, Morgan Hill, Gilroy, Monterey, Salinas, Hollister, Modesto, Stockton, Los Banos.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="light">
+    <div class="container">
+      <div class="contact-box">
+        <h2>Get a Free Estimate</h2>
+        <p>Call or email us today to schedule your service.</p>
+        <p><strong>Phone:</strong> <a href="tel:4086779655">(408) 677-9655</a></p>
+        <p><strong>Email:</strong> <a href="mailto:jmpowerwash408@gmail.com">jmpowerwash408@gmail.com</a></p>
+        <p><strong>Facebook:</strong> jmpowerwashservices</p>
+        <p><strong>Instagram:</strong> jmpowerwashservices</p>
+        <p><strong>Status:</strong> Licensed &amp; Insured</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="tel:4086779655">Call Now</a>
+          <a class="btn btn-secondary" href="mailto:jmpowerwash408@gmail.com">Request Estimate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>JM Power Wash Services © 2026</p>
+    <p>Serving San Jose, CA and surrounding areas</p>
+  </footer>
 
 </body>
 </html>
